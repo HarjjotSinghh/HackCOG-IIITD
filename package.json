@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "concurrent": "^0.3.2",
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "cd ./frontend && npm start",
+    "backend": "cd ./backend && node backend.js",
+    "start": "concurrently \"npm run frontend \" \"npm run backend\" "
+  }
+}
