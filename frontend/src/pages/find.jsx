@@ -1,12 +1,13 @@
 import React from 'react';
+import logo from "../assets/img/android-chrome-192x192.png"
 
-function FindPage() {
+function Find() {
     return (
         <div className="bg-black h-screen">
 
             <section className="flex gap-24 items-start pl-10">
                 <div className="z-[-1]">
-                    <img src="user.jpg" alt="user-image" className="h-screen object-cover mask-gradient-to-r from-black to-transparent"/>
+                    <img src="https://images.unsplash.com/photo-1656337789708-cdf37b07112d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="user-image" className="h-screen object-cover mask-gradient-to-r from-black to-transparent"/>
                 </div>
 
                 <div className="flex flex-col mt-[-90px] space-y-10">
@@ -28,4 +29,4 @@ function FindPage() {
     );
 }
 
-export default FindPage;
+export default Find;

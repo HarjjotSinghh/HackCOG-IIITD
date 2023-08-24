@@ -14,9 +14,12 @@ import {
 
 } from "@clerk/clerk-react";
 import { useAuth, useUser } from "@clerk/clerk-react";
-import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useNavigate, useLocation } from "react-router-dom";
 import Footer from './components/Footer';
+import Find from './pages/Find';
+import Home from './pages/Home';
 import axios from 'axios';
+import { useEffect } from 'react';
 export const webAppName = "Connexus";
 export const themeColors =  {
   "text": "#2e3e57",
@@ -80,6 +83,8 @@ function ProtectedPage() {
  
 function ClerkProviderWithRoutes() {
   const navigate = useNavigate();
+  
+  
   return (
     <ClerkProvider
       publishableKey={clerkPubKey}
@@ -141,6 +146,41 @@ function ClerkProviderWithRoutes() {
               <RedirectToSignIn />
            </SignedOut>
           </>
+
+          }
+        />
+        <Route
+          path="/find"
+          element={
+          <>
+
+            <SignedIn>
+              <Playground></Playground>
+              <Find></Find>
+              <Footer></Footer>
+            </SignedIn>
+             <SignedOut>
+              <RedirectToSignIn />
+           </SignedOut>
+          </>
+
+          }
+        />
+        <Route
+          path="/home"
+          element={
+          <>
+
+            <SignedIn>
+              <Playground></Playground>
+              <Home></Home>
+              <Footer></Footer>
+            </SignedIn>
+             <SignedOut>
+              <RedirectToSignIn />
+           </SignedOut>
+          </>
+
           }
         />
       </Routes>
@@ -149,6 +189,19 @@ function ClerkProviderWithRoutes() {
 }
  
 function App() {
+  // const { userId, sessionId, getToken } = useAuth();
+  // const { isLoaded, isSignedIn, user } = useUser();
+  // const location = useLocation();
+
+  // useEffect(() => {
+  //   // This function will be called whenever the route is accessed
+  //   // You can perform any actions you want here
+  //   console.log('Route accessed:', location.pathname);
+
+  //   // You can call your custom function here if needed
+  //   // yourCustomFunction();
+  // }, [location.pathname]); // This effect will re-run whenever the pathname changes
+
   return (
     <BrowserRouter>
       <ClerkProviderWithRoutes />

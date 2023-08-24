@@ -5,6 +5,7 @@ const cors = require("cors");
 const port = 9999;
 const User = require('./models/UserModel');
 const userRouter = require('./routes/user');
+const { ClerkExpressRequireAuth } = require('@clerk/clerk-sdk-node');
 
 require('dotenv').config();
 
@@ -25,6 +26,6 @@ mongoose.connect(`${process.env.MONGO_URI}`)
   console.log(error);
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-});
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`)
+// });

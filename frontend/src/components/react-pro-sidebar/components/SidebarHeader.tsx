@@ -56,7 +56,7 @@ export const SidebarHeader: React.FC<SidebarHeaderProps> = ({ children, rtl, ...
 
   return (
     <StyledSidebarHeader {...rest}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: "center", gap: "10px"}}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: "center", gap: "10px", overflow:"visible"}}>
         <img src={logo} alt="" className='max-w-[45px] max-h-[45px]' />
         <Typography variant="subtitle1" fontWeight={500} color={themeColors.text} className='mr-2'>
           {webAppName}
