@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400;9..40,500;9..40,900&family=Poppins&display=swap%27');
+:root {
+    --background : #f9f9f9 
+    --heading1 : #2e3e57
+    --randomfont : 
+}
+
+
+
+body {
+    background-color: var(--background);
+}
+
+
+.welcometo {
+    font-family: 'Covered By Your Grace', cursive;
+    position: absolute;
+    top:100px;
+    left:350px;
+    font-size: 150px;
+    color: #6fc081;
+    z-index: -1;
+}
+
+
+.name {
+    color: var(--heading1);
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    margin-top: 190px;
+    margin-left:130px;
+    font-size: 60px;
+}
+
+
+#buttons {
+    margin-top: 70px;
+}
+
+
+.middle {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    
+}
+
+.vl {
+    border: 2px solid green;
+    height: 100px;
+    
+}
+
+
+.connexusL {
+
+
+    position: absolute;
+    right:-44%;
+    z-index : -1;
+}
+
+.connexus-logo {
+    margin-top: 100px;
+    width: 1300px;
+    height: 1300px;
+    z-index: -1;
+}
+
+@keyframes spin {
+    0% {
+    transform: rotate(360deg);
+    }
+    100% {
+    transform: rotate(0deg);
+    }
+}
+
+
+.rotate {
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}

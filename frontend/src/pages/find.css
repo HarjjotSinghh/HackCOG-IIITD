@@ -1,0 +1,83 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Merriweather&family=Sacramento&display=swap');
+
+
+
+
+
+body {
+    background-color: black;
+}
+
+
+.user-image {
+    width: auto;
+    height: 100vh;
+}
+
+.fade-out-right img {
+    -webkit-mask-image: linear-gradient(to right, black 50%, transparent);
+    mask-image: linear-gradient(to right, black 50%, transparent);
+}
+
+
+#carouselss {
+    display: flex;
+    justify-content: left;
+    color: white;
+    gap: 100px;
+}
+
+
+
+#biot  {
+    text-align: left;
+    max-width: 500px;
+    padding-left: 50px;
+    font-family: kanit;
+    color: #B8E8FC;
+}
+
+.right-side {
+    display: flex;
+    /* justify-content: ; */
+    align-items: left;
+    flex-direction: column;
+    margin-top: -90px;
+
+}
+
+
+#badges-background {
+
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    background-color: #2F2F2F;
+    border-radius:20px;
+    z-index: -1;
+
+    height:80px;
+    width: 200px;
+
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+
+#badge-circle {
+    background-color: antiquewhite;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+
+/* font change
+font size
+font color halka sa
+badges */
