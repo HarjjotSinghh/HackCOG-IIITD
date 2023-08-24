@@ -20,6 +20,8 @@ import Find from './pages/Find';
 import Home from './pages/Home';
 import axios from 'axios';
 import { useEffect } from 'react';
+import ContactUs from './pages/contactus.jsx';
+import RedditPostUI from './pages/community.jsx';
 export const webAppName = "Connexus";
 export const themeColors =  {
   "text": "#2e3e57",
@@ -109,6 +111,14 @@ function ClerkProviderWithRoutes() {
         <Route
           path="/sign-up/*"
           element={<SignUp routing="path" path="/sign-up" />}
+        />
+         <Route
+          path="/contactus/*"
+          element={<ContactUs/>}
+        />
+        <Route
+          path="/communities/*"
+          element={<RedditPostUI/>}
         />
         <Route
           path="/user"
