@@ -1,3 +1,40 @@
+:root {
+    --background: #FBFDFF;
+    --secondary: #B8E8FC; 
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400;9..40,500;9..40,900&family=Poppins&display=swap');
+
+.cl-userButtonPopoverFooter {
+    display: none;
+}
+.cl-internal-b3fm6y {
+    display: none;
+}
+.cl-pageScrollBox {
+    padding: 2rem 1.5rem;
+}
+
+body {
+    background-color: var(--background);
+    
+}
+::-moz-selection { /* Code for Firefox */
+    color: var(--background);
+    background: var(--secondary);
+  }
+  
+::selection {
+color: var(--background);
+background: var(--secondary);
+
+}
+
+* {
+    font-family: 'DM Sans', sans-serif !important;
+    /* overflow-x: hidden !important; */
+}

@@ -9,11 +9,11 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      "text": "#FAFFFF",
-      "background": "#010A0C",
-      "primary": "#C42015",
-      "secondary": "#001013",
-      "accent": "#E13C1F"
+      "text": "#2e3e57",
+      "background": "#fbfdff",
+      "primary": "#C8FFD4",
+      "secondary": "#B8E8FC",
+      "accent": "#A4A2F9"
     },
   },
   plugins: [],
