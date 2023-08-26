@@ -12,7 +12,7 @@ export default function Footer() {
                 <div class="lg:pb-6 pb-6 md:mb-0 flex items-center justify-center flex-row gap-4">
                     <img src={logoSvg} draggable="false" className="lg:h-[85px] h-[60px]" alt="Logo" />
                     <p className=' text-gray-800 lg:w-[370px] w-[270px] lg:text-[16px] text-[12px]'>
-                        Our mission is to provide equal oppurtunities to every student in our nation by listing all avilable college/university events!
+                        Our mission is to.....
                     </p>
                 </div>
                 
@@ -59,11 +59,11 @@ export default function Footer() {
                     
                     , {" "}
                     <a target='_blank' rel='noreferrer' href='https://github.com/Ansh-Rajput' className='hover:underline text-gray-700'>
-                        Ansh
+                        Vanshika
                     </a>
                     , {" "}
                     <a target='_blank' rel='noreferrer' href='https://github.com/vanzeez' className='hover:underline text-gray-700'>
-                        Vanshika 
+                        Satyam 
                     </a>
                     {" "} & {" "}
                     <a target='_blank' rel='noreferrer' href='https://github.com/PrabhmeetSinghh' className='hover:underline text-gray-700'>

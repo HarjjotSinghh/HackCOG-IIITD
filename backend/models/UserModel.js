@@ -21,9 +21,22 @@ const userSchema = new mongoose.Schema({
     setup_steps_completed: {
         type: Number,
         default: 0,
+    },
+    interests: {
+        type: Array,
+        default: []
+    },
+    ageGroup: {
+        type: String,
+        default: ""
+    },
+    profession: {
+        type: String,
+        default: ""
     }
+
 },{ timestamps: true });
 
 const User = mongoose.model("User", userSchema);
 
-module.exports = User;
+module.exports = {User};

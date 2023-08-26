@@ -1,4 +1,38 @@
-const { User } = require('../models/UserModel')
+const { User } = require('../models/UserModel');
+
+const addUser = (req, res) => {
+    try {
+        // res.send("hello");
+        console.log(req.body);
+        if (!req.body.userName) {
+            return res.status(500).json({ message: 'Username not provided in the request body' });
+        };
+
+        const user = new User({
+            setup_complete: false,
+            setup_started: true,
+            email: req.body.email,
+            userName: req.body.userName
+        });
+        user.save();
+        res.send("added user successfully");
+        return res.status(201).json({ message: 'User added successfully', user: user });
+    } catch (error) {
+        console.error(error);
+        console.log(error.message);
+        return res.status(500).json({ message: 'Error Adding User', error: error.message });
+    };
+};
+
+const tryUser =  (req, res) => {
+    try {
+        res.send("hello");
+    } catch (error) {
+        console.error(error);
+        res.send("error");
+        return res.status(500).json({ message: 'Error Finding User', error: error.message });
+    };
+}
 
 const fetchUser = async (req, res) => {
     try {
@@ -19,4 +53,4 @@ const fetchUser = async (req, res) => {
     };
 };
 
-module.exports = {fetchUser};
+module.exports = {fetchUser, addUser, tryUser};

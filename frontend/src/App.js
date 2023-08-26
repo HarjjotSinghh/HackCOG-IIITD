@@ -22,6 +22,9 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import ContactUs from './pages/contactus.jsx';
 import RedditPostUI from './pages/community.jsx';
+import SetupProfile from './pages/SetupProfile';
+
+export const backendApiUri = "http://localhost:9999";
 export const webAppName = "Connexus";
 export const themeColors =  {
   "text": "#2e3e57",
@@ -156,6 +159,13 @@ function ClerkProviderWithRoutes() {
               <RedirectToSignIn />
            </SignedOut>
           </>
+
+          }
+        />
+        <Route
+          path="/setup"
+          element={
+          <SetupProfile></SetupProfile>
 
           }
         />
